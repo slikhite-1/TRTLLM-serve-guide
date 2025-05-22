@@ -28,7 +28,7 @@ pip install tensorrt_llm==0.19.0
 Run `trtllm-serve` with the appropriate arguments:
 
 ```bash
-trtllm-serve deepseek-ai/DeepSeek-R1-Distill-Llama-70B \
+trtllm-serve deepseek-ai/DeepSeek-R1-Distill-Llama-70B \ # or pass in path to your local HF model directory
     --backend pytorch \
     --tp_size 8 \
     --kv_cache_free_gpu_memory_fraction 0.9 \
